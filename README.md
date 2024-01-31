@@ -42,10 +42,10 @@ For the construction of the MaintNorm corpus, we adhered to the following annota
 
 The token masking in our corpus is categorised into four semantic classes:
 
-- **<id>**: Asset identifiers, for example, _ENG001_, _rd1286_
-- **<sensitive>**: Sensitive information specific to organisations, including proprietary systems, third-party contractors, and names of personnel.
-- **<num>**: Numerical entities, such as _8_, _7001223_
-- **<date>**: Representations of dates, either in numerical form like _10/10/2023_ or phrase form such as _8th Dec_
+- **`<id>`**: Asset identifiers, for example, _ENG001_, _rd1286_
+- **`<sensitive>`**: Sensitive information specific to organisations, including proprietary systems, third-party contractors, and names of personnel.
+- **`<num>`**: Numerical entities, such as _8_, _7001223_
+- **`<date>`**: Representations of dates, either in numerical form like _10/10/2023_ or phrase form such as _8th Dec_
 
 ## 3. Corpora
 
