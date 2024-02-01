@@ -1,6 +1,5 @@
 # MaintNorm: A corpus and benchmark model for lexical normalisation and masking of industrial maintenance short text
 
-![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-yellow)
 [![Paper](https://img.shields.io/badge/Paper-View-green?style=flat&logo=adobeacrobatreader)](./paper.pdf)
 
 :wave: ​This repository contains the data, models, and code accompanying the paper titled "MaintNorm: A corpus and benchmark model for lexical normalisation and masking of industrial maintenance short text", submitted to [WNUT 2024](http://noisy-text.github.io/2024/).
