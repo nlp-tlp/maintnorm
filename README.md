@@ -13,7 +13,7 @@
    1. [Annotation Guidelines](#21-annotation-guidelines)
    2. [Masking Scheme](#22-masking-scheme)
 
-3. [Corpora](#3-corpora)
+3. [Corpora (Dataset)](#3-corpora-(dataset))
    1. [Overview](#31-overview)
    2. [Format](#32-format)
    3. [Statistics](#33-statistics)
@@ -25,9 +25,13 @@
 
 ## 1. Overview
 
-Maintenance short texts are invaluable unstructured data sources, serving as a diagnostic and prognostic window into the operational health and status of physical assets. These user-generated texts, created during routine orad-hoc maintenance activities, offer insights into equipment performance, potential failure points, and maintenance needs. However, the use of information captured in these texts is hindered by inherent challenges: the prevalence of engineering jargon, domain-specific vernacular, random spelling errors without identifiable patterns, and the absence of standard grammatical structures. To transform these texts into accessible and analysable data, we introduce the MaintNorm dataset, the first resource specifically tailored for the lexical normalisation task of maintenance short texts. Comprising 12,000 examples, this dataset enables the efficient processing and interpretation of these texts. We demonstrate the utility of MaintNorm by training a lexical normalisation model as a sequence-to-sequence learning task with two learning objectives, namely, enhancing the quality of the texts and masking segments to obscure sensitive information to anonymise data. Our benchmark model demonstrates a universal error reduction rate of 95.8%. The [corpora](#3-corpora) and [benchmark outcomes](#5-results) are made available to the public under the MIT license.
+Maintenance short texts are invaluable unstructured data sources, serving as a diagnostic and prognostic window into the operational health and status of physical assets. These user-generated texts, created during routine or ad-hoc maintenance activities, offer insights into equipment performance, potential failure points, and maintenance needs. However, the use of information captured in these texts is hindered by inherent challenges: the prevalence of engineering jargon, domain-specific vernacular, random spelling errors without identifiable patterns, and the absence of standard grammatical structures. 
+
+To transform these texts into accessible and analysable data, we introduce the MaintNorm dataset, the first resource specifically tailored for the lexical normalisation task of maintenance short texts. Comprising 12,000 examples, this dataset enables the efficient processing and interpretation of these texts. We demonstrate the utility of MaintNorm by training a lexical normalisation model as a sequence-to-sequence learning task with two learning objectives, namely, enhancing the quality of the texts and masking segments to obscure sensitive information to anonymise data. Our benchmark model demonstrates a universal error reduction rate of 95.8%. The [corpora](#3-corpora) and [benchmark outcomes](#5-results) are made available to the public under the MIT license.
 
 ## 2. Guidelines and Masking Scheme
+
+The guidelines used for annotation and the masking scheme used for token-level tagging are outlined as follows.
 
 ### 2.1 Annotation Guidelines
 
@@ -42,12 +46,12 @@ For the construction of the MaintNorm corpus, we adhered to the following annota
 
 The token masking in our corpus is categorised into four semantic classes:
 
-- **`<id>`**: Asset identifiers, for example, _ENG001_, _rd1286_
-- **`<sensitive>`**: Sensitive information specific to organisations, including proprietary systems, third-party contractors, and names of personnel.
-- **`<num>`**: Numerical entities, such as _8_, _7001223_
-- **`<date>`**: Representations of dates, either in numerical form like _10/10/2023_ or phrase form such as _8th Dec_
+- `<id>`: Asset identifiers, for example, _ENG001_, _rd1286_
+- `<sensitive>`: Sensitive information specific to organisations, including proprietary systems, third-party contractors, and names of personnel.
+- `<num>`: Numerical entities, such as _8_, _7001223_
+- `<date>`: Representations of dates, either in numerical form like _10/10/2023_ or phrase form such as _8th Dec_
 
-## 3. Corpora
+## 3. Corpora (Dataset)
 
 ### 3.1. Overview
 
