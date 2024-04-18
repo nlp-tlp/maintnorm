@@ -1,6 +1,6 @@
 # MaintNorm: A corpus and benchmark model for lexical normalisation and masking of industrial maintenance short text
 
-[![Paper](https://img.shields.io/badge/Paper-View-green?style=flat&logo=adobeacrobatreader)](./paper.pdf)
+[![Paper](https://img.shields.io/badge/Paper-View-green?style=flat&logo=adobeacrobatreader)](https://aclanthology.org/2024.wnut-1.7/)
 
 :wave: ​This repository contains the data, models, and code accompanying the paper titled "MaintNorm: A corpus and benchmark model for lexical normalisation and masking of industrial maintenance short text", submitted to [WNUT 2024](http://noisy-text.github.io/2024/).
 
@@ -106,3 +106,29 @@ Feedback and contributions are always appreciated. If you encounter any discrepa
 For any specific inquiries or discussions, kindly get in touch:
 
 - tyler.bikaun@research.uwa.edu.au
+
+## 9. Attribution
+
+If you find this work useful, please cite us 🤗:
+
+```
+@inproceedings{bikaun-etal-2024-maintnorm,
+    title = "{M}aint{N}orm: A corpus and benchmark model for lexical normalisation and masking of industrial maintenance short text",
+    author = "Bikaun, Tyler  and
+      Hodkiewicz, Melinda  and
+      Liu, Wei",
+    editor = {van der Goot, Rob  and
+      Bak, JinYeong  and
+      M{\"u}ller-Eberstein, Max  and
+      Xu, Wei  and
+      Ritter, Alan  and
+      Baldwin, Tim},
+    booktitle = "Proceedings of the Ninth Workshop on Noisy and User-generated Text (W-NUT 2024)",
+    month = mar,
+    year = "2024",
+    address = "San {\.G}iljan, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.wnut-1.7",
+    pages = "68--78"
+}
+```
